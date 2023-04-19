@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            android:background="@drawable/orange">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="42dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="310dp"
+                android:layout_marginLeft="350dp"
+                android:layout_marginTop="40dp"
+                android:paddingRight="12dp"
+                android:text=""
+                android:textColor="@color/white1"
+                android:textSize="26dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </FrameLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp">
+
+            <EditText
+                android:id="@+id/User"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="20dp"
+                android:paddingStart="12dp"
+                android:paddingLeft="190dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="90dp"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp">
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_mail_24"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="20dp"
+                android:paddingStart="12dp"
+                android:paddingLeft="190dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="90dp"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="62dp"
+            android:layout_marginRight="62dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="12dp"
+
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="20dp"
+                android:paddingStart="12dp"
+                android:paddingLeft="190dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="90dp"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/registerTxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="62dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="62dp"
+            android:background="@drawable/button_design"
+            android:gravity="center"
+            android:onClick="goInformation"
+            android:text="REGISTER"
+            android:textColor="@color/white1"
+
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:paddingEnd="30dp"
+            android:text="Do you have already an account?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="123dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="-20dp"
+            android:onClick="goLogin"
+            android:text="Login now"
+            android:textColor="@color/orange"
+            android:textStyle="bold"
+            tools:ignore="OnClick" />
+    </LinearLayout>
+</RelativeLayout>
